@@ -94,7 +94,7 @@ export default function BackToTop(props) {
                                 className="flex space-evenly center-y"
                                 sx={{ display: { xs: "none", sm: "flex" } }}>
                                 <NavLink href="/" text="CV" />
-                                <NavLink href="/" text="Projekt" />
+                                <NavLink href="/work" text="Arbete" />
                                 <NavLink href="/contact" text="Kontakt" />
                             </Box>
                             <Box

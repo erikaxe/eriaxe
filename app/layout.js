@@ -6,7 +6,6 @@ import { CssVarsProvider } from "@mui/material/styles";
 import theme from "@/app/styles/theme";
 import Providers from "@/app/providers";
 import Globals from "@/app/_components/Globals/Globals";
-import { Container } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +20,7 @@ export default function RootLayout({ children }) {
             <body className={inter.className}>
                 <Providers>
                     <Globals />
-                    <Container maxWidth={"lg"}>{children}</Container>
+                    {children}
                 </Providers>
             </body>
         </html>

@@ -59,6 +59,7 @@ export default function BackToTop(props) {
                     backgroundColor: "#000",
                     position: "fixed",
                     boxShadow: 5,
+                    zIndex: 900,
                 }}
                 width="100%"
                 py={3}>

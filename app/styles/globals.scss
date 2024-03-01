@@ -82,6 +82,10 @@
     margin: 0;
 }
 
+:root {
+    --white: #fff;
+}
+
 html,
 body {
     max-width: 100vw;
@@ -203,6 +207,38 @@ a {
 
 .hamburger-menu:hover .bottom {
     transform: rotate(-45deg);
+}
+
+.position {
+    &-top-right {
+        position: absolute !important;
+        top: 4px;
+        right: 4px;
+    }
+    &-top-left {
+        position: absolute !important;
+        top: 4px;
+        left: 4px;
+    }
+    &-bottom-right {
+        position: absolute !important;
+        bottom: 4px;
+        right: 4px;
+    }
+}
+
+.radius-8 {
+    border-radius: 8px;
+}
+
+.fs {
+    &-60 {
+        font-size: 60px !important;
+    }
+}
+
+.white {
+    color: (var(--white));
 }
 
 .shimmer {

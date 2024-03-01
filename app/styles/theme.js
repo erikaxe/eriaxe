@@ -1,4 +1,3 @@
-// src/theme.ts
 "use client";
 import { Roboto } from "next/font/google";
 import { createTheme } from "@mui/material/styles";
@@ -152,6 +151,25 @@ const commonClasses = {
             lineHeight: "19px",
         },
     },
+    // font-weight
+    "&.fw-300": {
+        fontWeight: "300",
+    },
+    "&.fw-400": {
+        fontWeight: "400",
+    },
+    "&.fw-500": {
+        fontWeight: "500",
+    },
+    "&.fw-600": {
+        fontWeight: "600",
+    },
+    "&.fw-700": {
+        fontWeight: "700",
+    },
+    "&.fw-800": {
+        fontWeight: "800",
+    },
     // Letter spacing
     "&.ls-normal": {
         letterSpacing: "normal",
@@ -221,20 +239,17 @@ const theme = createTheme({
         },
     },
     components: {
-        /* MuiInputBase: {
-          styleOverrides: {
-              root: {
-                  height: "506px",
-              },
-          },
-      }, */
-        /*  MuiCheckbox: {
-          styleOverrides: {
-              "&.small": {
-                  padding: "0px !important",
-              },
-          },
-      }, */
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: "#000",
+                    // Add a hover effect
+                    "&:hover": {
+                        backgroundColor: "#575757",
+                    },
+                },
+            },
+        },
     },
 });
 

@@ -38,14 +38,14 @@ const WorkCard = ({ title, years, subHeader, desc }) => {
             <Typography variant="body1" className="fs-16" mb={3}>
                 {desc}
             </Typography>
-            <Collapse in={open} timeout="auto" /* unmountOnExit */>
+            <Collapse in={open} timeout="auto">
                 <ProjectGrid />
             </Collapse>
             <Button
                 variant="contained"
                 sx={{ mt: 3 }}
                 onClick={() => setOpen(!open)}>
-                View projects
+                {open ? "Stäng" : "Visa"} projekt
             </Button>
         </Box>
     );

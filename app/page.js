@@ -9,11 +9,7 @@ const Home = () => {
                     variant="h1"
                     textAlign="center"
                     fontSize={{ xs: "9vw", sm: "8vw", lg: "5vw" }}>
-                    Your next
-                    <Box component="span" className="header-next">
-                        .js
-                    </Box>{" "}
-                    developer?
+                    Your next developer?
                 </Typography>
             </Box>
         </Container>

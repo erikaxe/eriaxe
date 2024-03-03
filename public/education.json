@@ -1,0 +1,30 @@
+[
+    {
+        "title": "EC Utbildning - YH",
+        "subTitle": "Frontend utvecklare",
+        "years": "2020 - 2022",
+        "location": "Växjö",
+        "listTitle": "Kurser",
+        "courses": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Angular",
+            "Agila projektmetoder",
+            "UX-design"
+        ]
+    },
+    {
+        "title": "Drönaroperatör - YH",
+        "years": "2018 - 2019",
+        "location": "Ljungbyhed",
+        "listTitle": "Kurser",
+        "courses": [
+            "Flygteori",
+            "Flygteknik",
+            "Praktisk & teoretisk drönarkunskap",
+            "Juridik"
+        ]
+    }
+]

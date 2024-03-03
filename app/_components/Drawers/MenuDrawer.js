@@ -37,8 +37,8 @@ const MenuDrawer = () => {
                     <CloseIcon sx={{ color: "white" }} />
                 </IconButton>
                 <Box className="flex column center-y" gap={3} mt={4}>
+                    <NavLink href="/resume" text="CV" />
                     <NavLink href="/work" text="Arbete" />
-                    <NavLink href="/" text="CV" />
                     <NavLink href="/contact" text="Kontakt" />
                 </Box>
             </Drawer>

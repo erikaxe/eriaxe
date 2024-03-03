@@ -1,14 +1,16 @@
 [
     {
         "title": "AVIE CHEVAL",
-        "url": "https://www.aviecheval.com"
+        "url": "https://www.aviecheval.com",
+        "img": "/avie_og_img.jpg",
+        "alt": "avie_og_image",
+        "color": "#fff"
     },
     {
-        "title": "AVIE CHEVAL",
-        "url": "https://www.aviecheval.com"
-    },
-    {
-        "title": "AVIE CHEVAL",
-        "url": "https://www.aviecheval.com"
+        "title": "YELM PROTECTION",
+        "url": "https://www.yelmprotection.com/",
+        "img": "/yelm.png",
+        "alt": "yelm_protection_logo",
+        "color": "#000"
     }
 ]

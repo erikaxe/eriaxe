@@ -65,6 +65,12 @@ const commonClasses = {
             fontSize: "25px",
         },
     },
+    "&.fs45-30": {
+        fontSize: "45px",
+        "@media(max-width: 768px)": {
+            fontSize: "30px",
+        },
+    },
     // Font stretches
     "&.narrow": {
         fontStretch: "80%",
@@ -135,6 +141,15 @@ const commonClasses = {
     "&.lh-31": {
         lineHeight: "31px",
     },
+    "&.lh-32": {
+        lineHeight: "32px",
+    },
+    "&.lh-33": {
+        lineHeight: "33px",
+    },
+    "&.lh-34": {
+        lineHeight: "34px",
+    },
     "&.lh-38": {
         lineHeight: "38px",
     },
@@ -174,11 +189,8 @@ const commonClasses = {
     "&.ls-normal": {
         letterSpacing: "normal",
     },
-    "&.ls-1": {
-        letterSpacing: "-0.01em",
-    },
     "&.ls-2": {
-        letterSpacing: "-0.02em",
+        letterSpacing: "2px",
     },
     // Alignments
     "&.text-center": {
@@ -213,6 +225,7 @@ const roboto = Roboto({
 
 const theme = createTheme({
     typography: {
+        fontFamily: roboto,
         body1: {
             lineHeight: "19px",
             fontSize: "12px",

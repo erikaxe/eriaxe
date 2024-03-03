@@ -80,21 +80,12 @@ export default function BackToTop(props) {
                                 </svg>
                             </Link>
                         </Grid>
-                        <Grid item xs={6} className="flex center">
-                            <Divider
-                                sx={{
-                                    display: { xs: "none", md: "block" },
-                                    width: "100%",
-                                    borderBottomWidth: 1,
-                                    borderColor: "#4d4b4b",
-                                }}
-                            />
-                        </Grid>
+                        <Grid item xs={6}></Grid>
                         <Grid item xs={4}>
                             <Box
                                 className="flex space-evenly center-y"
                                 sx={{ display: { xs: "none", sm: "flex" } }}>
-                                <NavLink href="/" text="CV" />
+                                <NavLink href="/resume" text="CV" />
                                 <NavLink href="/work" text="Arbete" />
                                 <NavLink href="/contact" text="Kontakt" />
                             </Box>

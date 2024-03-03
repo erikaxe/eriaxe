@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Språk",
+        "skills": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        "title": "Ramverk & bibliotek",
+        "skills": ["NextJS", "React"]
+    },
+    {
+        "title": "Verktyg",
+        "skills": ["Git"]
+    },
+    {
+        "title": "Applikationer",
+        "skills": ["Storyblok", "Plytix", "Figma"]
+    }
+]

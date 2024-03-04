@@ -25,7 +25,6 @@ const MenuDrawer = () => {
                         width: "80%",
                         borderRight: "1px solid #f0f0f0",
                         backgroundColor: "#171717",
-                        /* boxShadow: "none", */
                     },
                 }}
                 anchor="right"

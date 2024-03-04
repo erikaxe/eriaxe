@@ -1,57 +1,52 @@
-import React, { useState } from "react";
-import { Box, Typography, Fade } from "@mui/material";
-import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { Box, Fade } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 
-const ProjectCard = ({ title, url, img, alt, color }) => {
+const ProjectCard = ({ href, url, img, color }) => {
     const [isHovered, setIsHovered] = useState(false);
-
     return (
-        <>
-            <Link href={url} target="_blank">
+        <Link
+            href={href}
+            style={{ display: "inline-block", width: "100%", height: "100%" }}>
+            <Box
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                sx={{
+                    position: "relative",
+                    textAlign: "center",
+                    borderRadius: "8px",
+                    border: "1px solid #000",
+                    height: "100%",
+                    color: "#000",
+                    py: { xs: "15vh", sm: "10vh", md: "8vh" },
+                    background: `url(${img}) center / cover`,
+                }}>
                 <Box
-                    className="flex max-height-171"
-                    position="relative"
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}>
-                    <Image
-                        className="radius-8 full-width"
-                        src={img}
-                        alt={alt}
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                    />
-                    <Box
-                        className="position-bottom-right white"
-                        sx={{ display: { xs: "flex", sm: "none" } }}>
-                        <LanguageIcon sx={{ color: color }} />
-                    </Box>
-                    <Fade in={isHovered}>
-                        <Box
-                            className="radius-8 flex center"
-                            sx={{
-                                position: "absolute",
-                                top: 0,
-                                left: 0,
-                                width: "100%",
-                                height: "100%",
-                                backgroundColor: "rgba(255, 255, 255, 0.5)",
-                            }}>
-                            <LanguageIcon
-                                className="fs-60"
-                                sx={{ color: color }}
-                            />
-                        </Box>
-                    </Fade>
+                    className="position-bottom-right white"
+                    sx={{ display: { xs: "flex", sm: "none" } }}>
+                    <LanguageIcon sx={{ color: color }} />
                 </Box>
-            </Link>
-            <Typography variant="h3" className="fs-16" mt={1}>
-                {title}
-            </Typography>
-        </>
+                <Fade in={isHovered}>
+                    <Box
+                        className="radius-8 flex center"
+                        sx={{
+                            flexDirection: "column",
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            backgroundColor: "rgba(255, 255, 255, 0.5)",
+                        }}>
+                        <LanguageIcon className="fs-60" sx={{ color: color }} />
+                        <Box component="code" sx={{ color: color }}>
+                            {url}
+                        </Box>
+                    </Box>
+                </Fade>
+            </Box>
+        </Link>
     );
 };
 

@@ -1,4 +1,4 @@
-import { Container, Box, Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import ContactButton from "@/app/_components/Buttons/ContactButton";
 
 const page = () => {

@@ -39,6 +39,11 @@ const MenuDrawer = () => {
                     <NavLink href="/resume" text="CV" />
                     <NavLink href="/work" text="Arbete" />
                     <NavLink href="/contact" text="Kontakt" />
+                    <NavLink
+                        external={true}
+                        href="https://github.com/erikaxe/eriaxe"
+                        text="Repo"
+                    />
                 </Box>
             </Drawer>
         </>

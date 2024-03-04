@@ -180,9 +180,19 @@ a {
     }
 }
 
-.full-width {
-    width: 100%;
-    height: auto;
+.width {
+    &-40 {
+        width: 40%;
+    }
+    &-100 {
+        width: 100%;
+    }
+}
+
+.height {
+    &-auto {
+        height: auto;
+    }
 }
 
 .lh {
@@ -210,5 +220,11 @@ a {
 .max-height {
     &-171 {
         max-height: 171.55px;
+    }
+}
+
+.bg {
+    &-black {
+        background: #000;
     }
 }

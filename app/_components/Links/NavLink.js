@@ -13,7 +13,7 @@ const NavLink = ({ href, text }) => {
             className="hover-underline-animation width-fit-content"
             href={href || "/"}>
             <Typography variant="h2" className="fs18-21">
-                {text || "*Insert Text*"}
+                {text}
             </Typography>
         </Link>
     );

@@ -15,7 +15,7 @@ https://eriaxe.vercel.app
 
 ## About Me
 
-I'm Erik, a passionate front end developer with a keen interest in computers. I bring 2 years of experience to the table. Explore this repository to learn more about my skills and experiences as a front end developer.
+I'm Erik, a passionate front end developer with a keen interest in computers. Explore my website and this repository to learn more about my skills and experiences as a front end developer.
 
 ## Technologies Used
 

@@ -1,5 +1,13 @@
-module.exports = {
-    env: {
-        storyblokApiToken: process.env.STORYBLOK_API_TOKEN,
+const nextConfig = {
+    // If route is not found, redirect to home page
+    async rewrites() {
+        return [
+            {
+                source: "/:path*",
+                destination: "/",
+            },
+        ];
     },
 };
+
+module.exports = nextConfig;

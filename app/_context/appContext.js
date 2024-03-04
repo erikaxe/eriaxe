@@ -1,13 +1,10 @@
 "use client";
-import { useState, createContext, useEffect } from "react";
-import { useMediaQuery } from "@mui/material";
+import { useState, createContext } from "react";
 import { useTheme } from "@mui/material/styles";
 
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-    const theme = useTheme();
-
     const [openDrawerNav, setOpenDrawerNav] = useState(false);
 
     const value = {

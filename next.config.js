@@ -1,4 +1,4 @@
-const nextConfig = {
+/* const nextConfig = {
     // If route is not found, redirect to home page
     async rewrites() {
         return [
@@ -11,3 +11,4 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+ */

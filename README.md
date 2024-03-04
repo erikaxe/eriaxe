@@ -17,14 +17,13 @@ https://eriaxe.vercel.app
 
 I'm Erik, a passionate front end developer with a keen interest in computers. Explore my website and this repository to learn more about my skills and experiences as a front end developer.
 
-## Technologies Used
+## Technologies used in this repository
 
 -   HTML5
--   CSS3
+-   SCSS
 -   JavaScript
 -   NextJS (AppRouter)
 -   MUI
--   SCSS
 
 ## Contact
 

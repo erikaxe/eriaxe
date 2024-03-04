@@ -6,19 +6,12 @@ import LanguageIcon from "@mui/icons-material/Language";
 const ProjectCard = ({ href, url, img, color }) => {
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <Link
-            href={href}
-            style={{ display: "inline-block", width: "100%", height: "100%" }}>
+        <Link href={href} target="_blank" className="inline-block-link">
             <Box
+                className="project-card"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 sx={{
-                    position: "relative",
-                    textAlign: "center",
-                    borderRadius: "8px",
-                    border: "1px solid #000",
-                    height: "100%",
-                    color: "#000",
                     py: { xs: "15vh", sm: "10vh", md: "8vh" },
                     background: `url(${img}) center / cover`,
                 }}>
@@ -28,19 +21,12 @@ const ProjectCard = ({ href, url, img, color }) => {
                     <LanguageIcon sx={{ color: color }} />
                 </Box>
                 <Fade in={isHovered}>
-                    <Box
-                        className="radius-8 flex center"
-                        sx={{
-                            flexDirection: "column",
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            width: "100%",
-                            height: "100%",
-                            backgroundColor: "rgba(255, 255, 255, 0.5)",
-                        }}>
-                        <LanguageIcon className="fs-60" sx={{ color: color }} />
-                        <Box component="code" sx={{ color: color }}>
+                    <Box className="radius-8 flex center column fade-in-overlay">
+                        <LanguageIcon
+                            className="fs-60"
+                            sx={{ color: "#000" }}
+                        />
+                        <Box component="code" color="#000">
                             {url}
                         </Box>
                     </Box>

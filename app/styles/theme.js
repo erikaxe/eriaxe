@@ -218,14 +218,14 @@ const commonClasses = {
 };
 
 const roboto = Roboto({
-    weight: ["300", "400", "500", "700"],
+    weight: ["100", "300", "400", "500", "700", "900"],
     subsets: ["latin"],
     display: "swap",
 });
 
 const theme = createTheme({
     typography: {
-        fontFamily: roboto,
+        fontFamily: roboto.style.fontFamily,
         body1: {
             lineHeight: "19px",
             fontSize: "12px",
@@ -233,6 +233,7 @@ const theme = createTheme({
             ...commonClasses,
         },
         h1: {
+            lineHeight: "1.2em",
             ...commonClasses,
         },
         h2: {

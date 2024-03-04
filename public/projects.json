@@ -2,15 +2,25 @@
     {
         "title": "AVIE CHEVAL",
         "url": "https://www.aviecheval.com",
+        "display_url": "www.aviecheval.com",
         "img": "/avie_og_img.jpg",
         "alt": "avie_og_image",
         "color": "#fff"
     },
     {
         "title": "YELM PROTECTION",
-        "url": "https://www.yelmprotection.com/",
+        "url": "https://www.yelmprotection.com",
+        "display_url": "www.yelmprotection.com",
         "img": "/yelm.png",
         "alt": "yelm_protection_logo",
         "color": "#000"
+    },
+    {
+        "title": "World-360 Dashboard",
+        "url": "https://360-admin.vercel.app/",
+        "display_url": "www.360-admin.vercel.app",
+        "img": "/360_logo.png",
+        "alt": "world_360_logo",
+        "color": "#fff"
     }
 ]

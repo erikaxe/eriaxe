@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Box, Typography, Container } from "@mui/material";
 
 const Home = () => {

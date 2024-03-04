@@ -1,15 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import {
-    Box,
-    Typography,
-    Divider,
-    Button,
-    Fade,
-    IconButton,
-    Collapse,
-} from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+import { Box, Typography, Divider, Button, Collapse } from "@mui/material";
 import ProjectGrid from "@/app/_components/Grids/ProjectGrid";
 
 const WorkCard = ({ title, years, subHeader, desc }) => {

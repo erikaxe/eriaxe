@@ -4,11 +4,12 @@ import { useContext } from "react";
 import { AppContext } from "@/app/_context/appContext";
 import { Typography } from "@mui/material";
 
-const NavLink = ({ href, text }) => {
+const NavLink = ({ href, text, external }) => {
     const { setOpenDrawerNav } = useContext(AppContext);
 
     return (
         <Link
+            target={external ? "_blank" : ""}
             onClick={() => setOpenDrawerNav(false)}
             className="hover-underline-animation width-fit-content"
             href={href || "/"}>

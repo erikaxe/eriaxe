@@ -9,10 +9,10 @@ const ProjectGrid = () => {
                 return (
                     <Grid item xs={12} sm={6} md={4} key={i}>
                         <ProjectCard
+                            href={item.url}
                             title={item.title}
-                            url={item.url}
+                            url={item.display_url}
                             img={item.img}
-                            alt={item.alt}
                             color={item.color}
                         />
                     </Grid>

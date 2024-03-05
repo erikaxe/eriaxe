@@ -11,7 +11,7 @@ const iconComponents = {
     },
     mailto: {
         Icon: EmailOutlinedIcon,
-        link: "mailto:your-email@example.com",
+        link: "mailto:erikio93@hotmail.com",
     },
 };
 

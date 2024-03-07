@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
             <body className={`${roboto.className} m-b-70`}>
                 <Providers>
                     <Globals />
-                    {children}
+                    <main>{children}</main>
                     <SpeedInsights />
                 </Providers>
             </body>

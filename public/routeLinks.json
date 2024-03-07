@@ -1,0 +1,19 @@
+[
+    {
+        "href": "/resume",
+        "text": "CV"
+    },
+    {
+        "href": "/work",
+        "text": "Arbete"
+    },
+    {
+        "href": "/contact",
+        "text": "Kontakt"
+    },
+    {
+        "external": true,
+        "href": "https://github.com/erikaxe/eriaxe",
+        "text": "Repo"
+    }
+]

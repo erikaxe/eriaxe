@@ -168,3 +168,23 @@ a {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
 }
+
+.nav-list {
+    padding: 0px !important;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-align: center;
+}
+
+.nav-item {
+    padding: 0px !important;
+    justify-content: center !important;
+}

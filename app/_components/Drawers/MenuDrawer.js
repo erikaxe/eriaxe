@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { AppContext } from "@/app/_context/appContext";
 import NavLink from "@/app/_components/Links/NavLink";
 
-const MenuDrawer = () => {
+const MenuDrawer = ({ links }) => {
     const { openDrawerNav, setOpenDrawerNav } = useContext(AppContext);
 
     const handleDrawerToggle = () => {
@@ -35,16 +35,25 @@ const MenuDrawer = () => {
                     onClick={handleDrawerToggle}>
                     <CloseIcon sx={{ color: "white" }} />
                 </IconButton>
-                <Box className="flex column center-y" gap={3} mt={4}>
-                    <NavLink href="/resume" text="CV" />
-                    <NavLink href="/work" text="Arbete" />
-                    <NavLink href="/contact" text="Kontakt" />
-                    <NavLink
-                        external={true}
-                        href="https://github.com/erikaxe/eriaxe"
-                        text="Repo"
-                    />
-                </Box>
+                <nav>
+                    <Box
+                        component={"ul"}
+                        className="flex column center-x "
+                        gap={3}
+                        mt={4}>
+                        {links.map((link, i) => {
+                            return (
+                                <Box component={"li"} key={i}>
+                                    <NavLink
+                                        href={link.href}
+                                        text={link.text}
+                                        external={link.external}
+                                    />
+                                </Box>
+                            );
+                        })}
+                    </Box>
+                </nav>
             </Drawer>
         </>
     );

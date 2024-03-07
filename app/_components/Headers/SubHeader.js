@@ -8,6 +8,7 @@ const SubHeader = ({ text }) => {
             </Typography>
             <Divider
                 sx={{
+                    width: "25%",
                     my: 3,
                     borderColor: "#4d4b4b",
                 }}

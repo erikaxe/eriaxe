@@ -14,10 +14,13 @@ const EducationGrid = () => {
                                 {item.title}
                             </Typography>
                             <Typography variant="body1" className="fs-15">
-                                {item.subHeader}
+                                {item.subTitle}
                             </Typography>
                             <Typography variant="body1" className="fs-15">
                                 {item.years}
+                            </Typography>
+                            <Typography variant="body1" className="fs-15">
+                                {item.location}
                             </Typography>
                         </Grid>
                         <Grid item xs={12} sm={4}>

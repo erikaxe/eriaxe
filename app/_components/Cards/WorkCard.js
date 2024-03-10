@@ -30,6 +30,9 @@ const WorkCard = ({ title, years, subHeader, desc }) => {
                 {desc}
             </Typography>
             <Collapse in={open} timeout="auto">
+                <Typography variant="body1" className="fs-16" mb={1}>
+                    Några av de projekten jag har jobbat med:
+                </Typography>
                 <ProjectGrid />
             </Collapse>
             <Button

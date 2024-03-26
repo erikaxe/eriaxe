@@ -38,3 +38,6 @@ next-env.d.ts
 # HTTPS Proxy certificates
 localhost.pem
 localhost-key.pem
+
+# secret notes
+secrets.txt

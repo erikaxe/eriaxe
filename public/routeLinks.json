@@ -1,19 +1,23 @@
 [
     {
         "href": "/resume",
-        "text": "CV"
+        "text": "CV",
+        "aria": "Navigate to the resume page"
     },
     {
         "href": "/work",
-        "text": "Arbete"
+        "text": "Arbete",
+        "aria": "Navigate to the work experience page"
     },
     {
         "href": "/contact",
-        "text": "Kontakt"
+        "text": "Kontakt",
+        "aria": "Navigate to the contact page"
     },
     {
         "external": true,
         "href": "https://github.com/erikaxe/eriaxe",
-        "text": "Repo"
+        "text": "Repo",
+        "aria": "Go to this websites Github repository"
     }
 ]

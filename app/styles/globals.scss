@@ -188,3 +188,8 @@ li {
     padding: 0px !important;
     justify-content: center !important;
 }
+
+.active-link {
+    text-decoration: underline 2px;
+    text-underline-offset: 3px;
+}

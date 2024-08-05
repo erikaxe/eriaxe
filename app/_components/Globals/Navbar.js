@@ -39,6 +39,7 @@ const Navbar = () => {
                                                 href={link.href}
                                                 text={link.text}
                                                 external={link.external}
+                                                aria={link.aria}
                                             />
                                         </Box>
                                     );

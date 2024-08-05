@@ -5,7 +5,7 @@ import { AppContext } from "@/app/_context/appContext";
 import { Typography } from "@mui/material";
 import { usePathname } from "next/navigation";
 
-const NavLink = ({ href, text, external }) => {
+const NavLink = ({ href, text, external, aria }) => {
     const { setOpenDrawerNav } = useContext(AppContext);
 
     const pathName = usePathname();
@@ -15,7 +15,8 @@ const NavLink = ({ href, text, external }) => {
             target={external ? "_blank" : ""}
             onClick={() => setOpenDrawerNav(false)}
             className="hover-underline-animation width-fit-content"
-            href={href || "/"}>
+            href={href || "/"}
+            aria-label={aria}>
             <Typography
                 variant="h2"
                 className={`fs18-21 ${pathName === href && "active-link"}`}>

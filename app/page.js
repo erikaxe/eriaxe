@@ -10,6 +10,11 @@ const Home = () => {
                     fontSize={{ xs: "9vw", sm: "8vw", lg: "5vw" }}>
                     Your next developer?
                 </Typography>
+                <Box className="sr-only" aria-live="polite">
+                    Welcome to the homepage. Please note that some pages contain
+                    collapsible sections. You can navigate using Tab and
+                    Shift+Tab.
+                </Box>
             </Box>
         </Container>
     );

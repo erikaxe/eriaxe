@@ -2,7 +2,7 @@
     {
         "href": "/resume",
         "text": "CV",
-        "aria": "Navigate to the resume page"
+        "aria": "Navigate to the resumé page"
     },
     {
         "href": "/work",
@@ -18,6 +18,6 @@
         "external": true,
         "href": "https://github.com/erikaxe/eriaxe",
         "text": "Repo",
-        "aria": "Go to this websites Github repository"
+        "aria": "Go to websites Github repository"
     }
 ]

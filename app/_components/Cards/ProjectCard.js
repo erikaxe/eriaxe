@@ -3,10 +3,14 @@ import Link from "next/link";
 import { Box, Fade } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 
-const ProjectCard = ({ href, url, img, color }) => {
+const ProjectCard = ({ href, url, img, color, title }) => {
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <Link href={href} target="_blank" className="inline-block-link">
+        <Link
+            href={href}
+            target="_blank"
+            className="inline-block-link"
+            aria-label={`Project ${title} page.`}>
             <Box
                 className="project-card"
                 onMouseEnter={() => setIsHovered(true)}

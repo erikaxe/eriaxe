@@ -39,15 +39,15 @@ const WorkCard = ({ title, years, subHeader, desc }) => {
                 variant="contained"
                 sx={{ mt: 3 }}
                 onClick={() => setOpen(!open)}
-                aria-label={`${
-                    open ? "Close project view" : "Open project view"
-                }`}>
+                aria-expanded={open}
+                aria-controls="project-view"
+                aria-label="Project view">
                 {open ? "Stäng" : "Visa"} projekt
             </Button>
 
-            <div aria-live="polite" className="sr-only">
+            <div id="project-view" aria-live="polite" className="sr-only">
                 {open
-                    ? "Project view opened. New project cards displayed above."
+                    ? "New project cards displayed above."
                     : "Project view closed."}
             </div>
         </Box>

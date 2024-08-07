@@ -8,7 +8,10 @@ const page = () => {
     return (
         <Container maxWidth="lg" sx={{ mt: "calc(30vh - 1.5em)" }}>
             <section>
-                <Typography variant="h1" className="fs45-30 fw-600">
+                <Typography variant="h1" className="sr-only">
+                    Erik Axelsson - Professional Experience and Background
+                </Typography>
+                <Typography variant="h2" className="fs45-30 fw-600">
                     Erik Axelsson
                 </Typography>
                 <Typography variant="body1" className="fs21-15 lh-34" my={4}>

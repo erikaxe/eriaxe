@@ -16,14 +16,14 @@ const WorkCard = ({ title, years, subHeader, desc }) => {
                 borderRadius: "15px",
                 p: 3,
             }}>
-            <Typography variant="h3" className="fs-24 fw-600">
+            <Typography variant="h2" className="fs-24 fw-600">
                 {title}
             </Typography>
             <Typography variant="body1" className="fs-16" mb={1} mt={0.3}>
                 {years}
             </Typography>
             <Divider />
-            <Typography variant="h4" className="fs-16 fw-600" my={1}>
+            <Typography variant="h3" className="fs-16 fw-600" my={1}>
                 {subHeader}
             </Typography>
             <Typography variant="body1" className="fs-16" mb={3}>

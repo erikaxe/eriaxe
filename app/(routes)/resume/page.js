@@ -11,7 +11,10 @@ const page = () => {
                 <Typography variant="h1" className="sr-only">
                     Erik Axelsson - Professional Experience and Background
                 </Typography>
-                <Typography variant="h2" className="fs45-30 fw-600">
+                <Typography
+                    variant="h2"
+                    className="fs45-30 fw-600"
+                    aria-hidden="true">
                     Erik Axelsson
                 </Typography>
                 <Typography variant="body1" className="fs21-15 lh-34" my={4}>
